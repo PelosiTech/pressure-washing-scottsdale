@@ -1,0 +1,80 @@
+/* Scottsdale Pressure Washing - pressurewashingscottsdalearizona.com */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Nunito&display=swap');
+
+:root {
+  --primary: #FFFFFF;
+  --secondary: #C0C0C0;
+  --accent: #008080;
+  --text: #2C2C2C;
+  --font-head: 'Quicksand', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:var(--font-body); color:var(--text); line-height:1.7; background:#fff; }
+h1,h2,h3,h4 { font-family:var(--font-head); }
+
+/* NAV */
+.navbar { background:var(--primary); padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; position:sticky; top:0; z-index:100; }
+.navbar .logo { color:#fff; font-family:var(--font-head); font-size:1.5rem; font-weight:700; text-decoration:none; }
+.navbar nav a { color:rgba(255,255,255,0.9); text-decoration:none; margin-left:1.5rem; font-weight:500; transition:color 0.3s; }
+.navbar nav a:hover { color:#C0C0C0; }
+.mobile-toggle { display:none; background:none; border:none; color:#fff; font-size:1.5rem; cursor:pointer; }
+
+/* HERO */
+.hero { background:linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color:#fff; padding:5rem 2rem; text-align:center; }
+.hero h1 { font-size:2.8rem; margin-bottom:1rem; }
+.hero p { font-size:1.2rem; max-width:700px; margin:0 auto 2rem; opacity:0.95; }
+.btn { display:inline-block; padding:0.9rem 2.2rem; border-radius:6px; text-decoration:none; font-weight:600; transition:all 0.3s; cursor:pointer; }
+.btn-primary { background:#C0C0C0; color:#FFFFFF; }
+.btn-primary:hover { opacity:0.9; transform:translateY(-2px); }
+.btn-secondary { background:transparent; color:#fff; border:2px solid #fff; }
+.btn-secondary:hover { background:#fff; color:var(--primary); }
+
+/* SECTIONS */
+.section { padding:4rem 2rem; max-width:1200px; margin:0 auto; }
+.section-alt { background:#f7f7f7; }
+.section h2 { font-size:2rem; margin-bottom:1rem; text-align:center; color:var(--primary); }
+.section-subtitle { text-align:center; max-width:700px; margin:0 auto 2.5rem; color:#666; }
+
+/* CARDS */
+.card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem; margin-top:2rem; }
+.card { background:#fff; border-radius:10px; padding:2rem; box-shadow:0 4px 15px rgba(0,0,0,0.08); transition:transform 0.3s,box-shadow 0.3s; }
+.card:hover { transform:translateY(-5px); box-shadow:0 8px 25px rgba(0,0,0,0.15); }
+.card h3 { color:var(--primary); margin-bottom:0.7rem; font-size:1.3rem; }
+.card p { color:#555; }
+
+/* CTA BAND */
+.cta-band { background:var(--primary); color:#fff; text-align:center; padding:3.5rem 2rem; }
+.cta-band h2 { font-size:2rem; margin-bottom:0.8rem; }
+.cta-band p { margin-bottom:1.5rem; opacity:0.9; }
+
+/* FORM */
+.contact-form { max-width:600px; margin:2rem auto 0; }
+.contact-form input,.contact-form textarea,.contact-form select { width:100%; padding:0.85rem 1rem; margin-bottom:1rem; border:1px solid #ddd; border-radius:6px; font-family:var(--font-body); font-size:1rem; }
+.contact-form textarea { min-height:140px; resize:vertical; }
+.contact-form button { background:var(--primary); color:#fff; border:none; padding:1rem 2.5rem; border-radius:6px; font-size:1rem; font-weight:600; cursor:pointer; transition:background 0.3s; }
+.contact-form button:hover { background:var(--accent); }
+
+/* FOOTER */
+footer { background:#1a1a1a; color:#ccc; padding:2.5rem 2rem; text-align:center; }
+footer a { color:var(--accent); text-decoration:none; }
+footer .footer-phone { font-size:1.3rem; color:#fff; font-weight:700; margin:0.5rem 0; }
+
+/* ABOUT */
+.about-content { max-width:800px; margin:0 auto; }
+.about-content p { margin-bottom:1.2rem; }
+.values-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; margin-top:2rem; }
+.value-item { text-align:center; padding:1.5rem; }
+.value-item .icon { font-size:2.5rem; margin-bottom:0.5rem; }
+.value-item h3 { color:var(--primary); margin-bottom:0.5rem; }
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+  .hero h1 { font-size:2rem; }
+  .navbar nav { display:none; width:100%; text-align:center; padding-top:1rem; }
+  .navbar nav.active { display:block; }
+  .navbar nav a { display:block; margin:0.5rem 0; }
+  .mobile-toggle { display:block; }
+  .section { padding:2.5rem 1.2rem; }
+}

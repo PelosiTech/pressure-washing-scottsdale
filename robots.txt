@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pressurewashingscottsdalearizona.com/sitemap.xml
